@@ -18,7 +18,9 @@ def valid_combinations(words_list, letters, center):
             if n<len(words_list) and words_list[n]==word:
                 valid_words.add(word)
 
-    return sorted(valid_words)
+    sorted(valid_words)
+
+    return sorted(valid_words, key=len)
 
 words_file = open("../assets/words.txt", "r")
 words_list = (words_file.read()).split("\n")
