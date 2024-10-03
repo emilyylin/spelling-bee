@@ -5,7 +5,7 @@ unparsed_words = (word_list.read()).split("\n")
 parsed_words = open("../assets/words.txt", "w")
 
 for word in unparsed_words:
-    if(len(word)>4):
+    if(len(word)>3):
         parsed_words.write(word+"\n")
 
 parsed_words.close()
