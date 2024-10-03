@@ -17,10 +17,8 @@ def valid_combinations(words_list, letters, center):
             n=bisect.bisect_left(words_list, word)
             if n<len(words_list) and words_list[n]==word:
                 valid_words.add(word)
-
-    sorted(valid_words)
-
-    return sorted(valid_words, key=len)
+                
+    return sorted(valid_words)
 
 words_file = open("../assets/words.txt", "r")
 words_list = (words_file.read()).split("\n")
